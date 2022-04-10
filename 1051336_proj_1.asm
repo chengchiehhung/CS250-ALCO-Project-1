@@ -56,7 +56,7 @@ elif4:	addi t2, x0, 10	 # if ( t1 < = 10 ) --> elif5
 	lw t1, 8(sp) # load original x
 	sw a1, 8(sp) # save f(x-1) to stack
 	
-	addi a0, t1, -3 # (x-3)
+	addi a0, t1, -3 # (x-2)
 	jal function
 	lw t1, 8(sp)
 	add a1, a1, t1
